@@ -1,7 +1,13 @@
 import Link from "next/link"
 import { useRouter } from "next/router"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpaceShuttle } from '@fortawesome/free-solid-svg-icons'
 
 const MENUS = [
+    {
+        name: 'Space',
+        link: '/'
+    },
     {
         name: 'Now',
         link: '/now',
@@ -38,6 +44,10 @@ export default function Navbar(){
                                 return (
                                     <Link key={item.name} href={item.link}>
                                         <a className={"transition-all inline-block px-5 py-2 rounded-md font-semibold hover:bg-white hover:bg-opacity-50 hover:text-blue-600 focus:outline-none focus:ring  " + (router.pathname === item.link ? 'text-blue-600' : 'text-gray-500')}>
+                                            {
+                                                router.pathname === item.link &&
+                                                <FontAwesomeIcon icon={faSpaceShuttle} className="mr-2" />
+                                            }
                                             {item.name}
                                         </a>
                                     </Link>

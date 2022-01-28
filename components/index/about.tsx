@@ -1,28 +1,30 @@
+import Link from "next/link"
+
 const LINKS = [
     {
         icon: '✍🏻',
         name: 'Writings',
         description: 'Technical writing and reflective notes',
-        href: '',
+        href: '/writings',
     },
     {
         icon: '📚',
         name: 'Books and their Marks',
         description: 'Bookshelf, currently reading, and all interesting stuff',
-        href: '',
+        href: '/bookmarks',
     },
 
     {
         icon: '👋🏻',
         name: 'Now',
         description: 'A complete descriptive log of my life',
-        href: '',
+        href: '/now',
     },
     {
         icon: '👨🏻‍💻',
         name: 'Works',
         description: 'Projects and experience I worked for.',
-        href: '',
+        href: '/works',
     }
 ]
 
@@ -36,7 +38,7 @@ export default function HomeAbout(){
                 </p>
                 <br />
                 <p>
-                    Currently pursuing bachelor degree in Computer Science in a private university in Yogyakarta while also doing freelance works as developer or designer.
+                    Currently pursuing Computer Science bachelor degree a private university in Yogyakarta while also doing freelance works as developer or designer.
                 </p>
                 <br />
                 <p>
@@ -53,15 +55,17 @@ export default function HomeAbout(){
                     {
                         LINKS.map((item) => {
                             return (
-                                <li key={item.name} className="transition-all group mb-4 bg-gray-50 py-3 px-4 rounded-lg flex items-center border border-gray-50 hover:border-blue-100 hover:bg-blue-50 hover:shadow-[4px_2px_40px_-20px_rgba(39,163,252,0.5)]">
-                                    <div className="text-4xl p-4 rounded-full bg-gray-00">
-                                        {item.icon}
-                                    </div>
-                                    <div className="ml-3">
-                                        <div className="transition-all font-semibold group-hover:text-blue-500">{item.name}</div>
-                                        <p className="text-xs sm:text-base text-gray-400 group-hover:text-gray-500">{item.description } </p>
-                                    </div>
-                                </li>
+                                <Link key={item.name} href={item.href}>
+                                    <a className="transition-all group mb-4 bg-gray-50 py-3 px-4 rounded-lg flex items-center border border-gray-50 hover:border-blue-100 hover:bg-blue-50 hover:shadow-[4px_2px_40px_-20px_rgba(39,163,252,0.5)]">
+                                        <div className="text-4xl p-4 rounded-full bg-gray-00">
+                                            {item.icon}
+                                        </div>
+                                        <div className="ml-3">
+                                            <div className="transition-all font-semibold group-hover:text-blue-500">{item.name}</div>
+                                            <p className="text-xs sm:text-base text-gray-400 group-hover:text-gray-500">{item.description } </p>
+                                        </div>
+                                    </a>
+                                </Link>
                             )
                         })
                     }
