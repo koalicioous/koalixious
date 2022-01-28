@@ -28,8 +28,8 @@ const LINKS = [
 
 export default function HomeAbout(){
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 md:gap-8 text-xs md:text-lg max-w-7xl">
-            <div className="bg-gray-0 px-6 py-8 rounded-lg leading-loose text-gray-600">
+        <section className="grid grid-cols-1 md:grid-cols-2 md:gap-8 text-xs md:text-lg xl:w-5/6">
+            <div className="bg-gray-0 sm:px-6 py-8 rounded-lg leading-loose text-gray-600">
                 <h1 className="text-xl md:text-3xl mb-4">🎵 Intro</h1>
                 <p>
                     Hi! My name is Muhammad Ulil Albab Surya Negara (@Koalicioous). I&apos;m a software engineer specializing in frontend development. <br />
@@ -47,7 +47,7 @@ export default function HomeAbout(){
                     If you are interested in hiring me or having further conversation, simply send me a message!
                 </p>
             </div>
-            <div className="px-6 py-8 rounded-lg leading-loose text-gray-600">
+            <div className="sm:px-6 py-8 rounded-lg leading-loose text-gray-600">
                 <h1 className="text-xl md:text-3xl mb-4">🔗 Quick Access</h1>
                 <ul>
                     {
