@@ -38,7 +38,7 @@ const EXPERIENCES = [
 export default function Experiences(){
     return (
         <section className="mt-16 max-w-5xl mx-auto bg-white pt-12">
-            <h1 className='text-3xl font-semibold text-gray-500 mb-6'>Education &amp; Professional Experiences</h1>
+            <h1 className='text-xl md:text-3xl font-semibold text-gray-500 mb-6'>Education &amp; Professional Experiences</h1>
             <ul>
                 {
                     EXPERIENCES.map((item, index) => {
