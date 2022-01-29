@@ -29,6 +29,7 @@ a {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-animation: hue 10s infinite linear;
+  display: block;
 }
 
 @-webkit-keyframes hue {
