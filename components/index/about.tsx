@@ -34,7 +34,7 @@ export default function HomeAbout(){
             <div className="bg-gray-0 sm:px-6 py-8 rounded-lg leading-loose text-gray-600">
                 <h1 className="text-xl md:text-3xl mb-4">🎵 Intro</h1>
                 <p>
-                    Hi! My name is Muhammad Ulil Albab Surya Negara (@Koalicioous). I&apos;m a software engineer specializing in frontend development. <br />
+                    Hi! My name is <strong>Muhammad Ulil Albab Surya Negara (@Koalicioous)</strong>. I&apos;m a software engineer specializing in frontend development. <br />
                 </p>
                 <br />
                 <p>
@@ -42,11 +42,22 @@ export default function HomeAbout(){
                 </p>
                 <br />
                 <p>
-                    In my spare time, i read books and write technical/reflective articles on medium. Go to Now Page to know more about me!
+                    In my spare time, i read books and write technical/reflective articles on medium.&nbsp;
+                    <Link href="/now">
+                        <a className="underline">
+                        Go to Now Page &nbsp;
+                        </a>
+                    </Link>
+                    to know more about me!
                 </p>
                 <br />
                 <p>
-                    If you are interested in hiring me or having further conversation, simply send me a message!
+                    If you are interested in hiring me or having further conversation,&nbsp;
+                    <Link href="mailto:surya.negara@gontor.ac.id">
+                        <a className="font-medium underline" target="_blank" rel="noreferrer">
+                        send me a message!
+                        </a>
+                    </Link>
                 </p>
             </div>
             <div className="sm:px-6 py-8 rounded-lg leading-loose text-gray-600">
