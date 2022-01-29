@@ -3,26 +3,37 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDotCircle, faTerminal, faEllipsisH } from '@fortawesome/free-solid-svg-icons'
+import Modal from './navbar-modal';
 
 const MENUS = [
     {
+        icon: '🕶',
         name: 'Space',
+        description: 'start here!',
         link: '/'
     },
     {
+        icon: '👋🏻',
         name: 'Now',
+        description: 'about me',
         link: '/now',
     },
     {
+        icon: '👨🏻‍💻',
         name: 'Works',
+        description: 'projects & experiences',
         link: '/works',
     },
     {
+        icon: '✍🏻',
         name: 'Writings',
+        description: 'published articles',
         link: '/writings',
     },
     {
+        icon: '📚',
         name: 'Bookmarks',
+        description: 'interesting stuff',
         link: '/bookmarks',
     },
 ]
@@ -71,7 +82,10 @@ export default function Navbar(){
                 </section>
             {
                 modal &&
-                <div role="button" className="h-screen w-screen bg-gray-800 absolute top-0 z-50 bg-opacity-50 backdrop-blur-sm" onClick={() => setModal(!modal)} />
+                <div className='h-screen w-screen absolute top-0 z-40'>
+                    <Modal menus={MENUS} />
+                    <div role="button" className="bg-opacity-50 w-full h-full bg-gray-800 backdrop-blur-sm" onClick={() => setModal(!modal)} />
+                </div>
             }
             </nav>
             <div className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-40 blur-2xl opacity-30 -mt-40 relative z-10">
