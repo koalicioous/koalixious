@@ -9,7 +9,7 @@ export default function index(){
     <DefaultLayout>
       <HomeHeading />
       <HomeAbout />
-      <Highlights />
+      {/* <Highlights /> */}
       <div className='p-4 w-full h-24 lg:h-80 bg-gradient-to-t from-white sticky bottom-0 left-0 filter bg-opacity-20'></div>
     </DefaultLayout>
   )

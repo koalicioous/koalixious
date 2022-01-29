@@ -36,13 +36,13 @@ const ITEMS = [
 
 export default function Items(){
     return (
-        <section className="mt-12 max-w-5xl mx-auto">
-            <h1 className='text-3xl font-semibold text-gray-500 mb-6'>2022</h1>
+        <section className="mt-12 max-w-5xl mx-auto bg-white pt-12">
+            <h1 className='text-3xl font-semibold text-gray-500 mb-6'>🌕 2022</h1>
             <ul>
                 {
-                    ITEMS.map((item) => {
+                    ITEMS.map((item, index) => {
                         return (
-                            <li key={item.title} className="flex">
+                            <li key={index} className="flex">
                                 <div className="flex items-center justify-center flex-col mr-4">
                                     <div className='p-4 rounded-full bg-gray-50 md:text-2xl w-12 h-12 md:w-16 md:h-16 flex items-center justify-center text-blue-400'>
                                         <FontAwesomeIcon icon={faMapPin} />

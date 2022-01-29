@@ -5,7 +5,7 @@ interface HeadingProps {
 }
 export default function Heading({ title, subtitle, description }: HeadingProps){
     return (
-        <section>
+        <section className="">
             <h1 className="text-center text-5xl md:text-9xl font-medium text-gray-200 my-40">
                 { title }
             </h1>
