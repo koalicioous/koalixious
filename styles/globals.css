@@ -23,7 +23,7 @@ a {
 
 .heading {
   color: #f35626;
-	background: linear-gradient(70.44deg, #FFEC41 0%, rgba(255, 28, 150, 0.85) 23.43%, #A323F2 52.04%, rgba(12, 168, 217, 0.79) 82.75%, #DE08A2 107.43%);
+	background: linear-gradient(70.44deg,#FFEC41 0%, rgba(255, 28, 150, 0.85) 23.43%, #A323F2 52.04%, rgba(12, 168, 217, 0.79) 82.75%, #DE08A2 107.43%);;
   -webkit-background-size: 800% 800%;
   background-size: 800% 800%;
 	-webkit-background-clip: text;

@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Modal({menus}: {menus: { icon: string, name: string, link: string, description: string}[]}){
     return (
-        <section className="bg-white absolute z-50 w-full max-w-5xl p-4 left-1/2 -translate-x-1/2 rounded-t-md bottom-0">
+        <section className="bg-white absolute z-50 w-full max-w-5xl p-4 pb-24 left-1/2 -translate-x-1/2 rounded-t-md bottom-0">
             <ul>
                 {
                     menus.map((item) => {
