@@ -9,7 +9,7 @@ export default function Now(){
         <Heading title='Now Page' subtitle='What do I do now' description='a descriptive log of my currently doing, learning, and concerns.' />
         <Items />
       </main>
-        <div className='p-4 w-full h-24 lg:h-80 bg-gradient-to-t from-white sticky bottom-0 left-0 filter bg-opacity-20'></div>
+      <div className='p-4 w-full h-24 lg:h-80 bg-gradient-to-t from-white sticky bottom-0 left-0 filter bg-opacity-20'></div>
     </DefaultLayout>
   )
 }
