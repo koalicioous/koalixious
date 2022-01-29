@@ -38,7 +38,7 @@ export default function HomeAbout(){
                 </p>
                 <br />
                 <p>
-                    Currently pursuing Computer Science bachelor degree a private university in Yogyakarta while also doing freelance works as developer or designer.
+                    Currently pursuing Computer Science bachelor degree in a private university in Yogyakarta while also doing freelance works as developer or designer.
                 </p>
                 <br />
                 <p>
