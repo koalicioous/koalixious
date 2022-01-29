@@ -10,31 +10,36 @@ const MENUS = [
         icon: '🕶',
         name: 'Space',
         description: 'start here!',
-        link: '/'
+        link: '/',
+        key: 's'
     },
     {
         icon: '👋🏻',
         name: 'Now',
         description: 'about me',
         link: '/now',
+        key: 'n',
     },
     {
         icon: '👨🏻‍💻',
         name: 'Works',
         description: 'projects & experiences',
         link: '/works',
+        key: 'w',
     },
     {
         icon: '✍🏻',
         name: 'Writings',
         description: 'published articles',
         link: '/writings',
+        key: 'm',
     },
     {
         icon: '📚',
         name: 'Bookmarks',
         description: 'interesting stuff',
         link: '/bookmarks',
+        key: 'b',
     },
 ]
 export default function Navbar(){
@@ -48,6 +53,17 @@ export default function Navbar(){
             document.body.style.overflow = 'unset';
           }
      }, [modal]);
+
+    useEffect(() => {
+        document.addEventListener('keydown', keyboardHandler)
+    }, []);
+
+    const keyboardHandler = (event: any) => {
+        if (event.key === "Escape") return setModal(false);
+        const action = MENUS.map(({link,key}) => ({link,key})).find((item) => item.key === event.key)
+        if (action?.link === router.pathname) setModal(false)
+        if (action) router.push(action.link)
+    }
 
     return (
         <>
