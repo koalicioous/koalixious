@@ -11,6 +11,26 @@ const ITEMS = [
         year: '2022',
         title: 'Working for United Nation',
         content: 'They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she.They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she .They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she '
+    },
+    {
+        year: '2022',
+        title: 'Building Personal Website',
+        content: 'They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she knew the world would be there to see. The only one who had disagreed with this sentiment was her brother. He had told her that you dont show the world what youre made of when they are all watching, you show that in your actions when nobody was looking. It was looking more and more like her brother was correct.'
+    },
+    {
+        year: '2022',
+        title: 'Working for United Nation',
+        content: 'They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she.They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she .They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she '
+    },
+    {
+        year: '2022',
+        title: 'Building Personal Website',
+        content: 'They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she knew the world would be there to see. The only one who had disagreed with this sentiment was her brother. He had told her that you dont show the world what youre made of when they are all watching, you show that in your actions when nobody was looking. It was looking more and more like her brother was correct.'
+    },
+    {
+        year: '2022',
+        title: 'Working for United Nation',
+        content: 'They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she.They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she .They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she '
     }
 ]
 
