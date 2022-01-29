@@ -61,8 +61,8 @@ export default function Navbar(){
     const keyboardHandler = (event: any) => {
         if (event.key === "Escape") return setModal(false);
         const action = MENUS.map(({link,key}) => ({link,key})).find((item) => item.key === event.key)
-        if (action?.link === router.pathname) setModal(false)
-        if (action) router.push(action.link)
+        if (action?.link === router.pathname) return setModal(false)
+        if (action) return router.push(action.link)
     }
 
     return (
@@ -71,7 +71,6 @@ export default function Navbar(){
                 <section className="mx-4 sm:mx-8 md:mx-10 xl:mx-32 py-4 flex items-center justify-between">
                     <Link href="/">
                         <a className="flex items-center">
-                            <span className="text-2xl md:text-4xl hidden sm:block">🕶</span>
                             <span  className="font-bold text-sm md:text-lg ml-2">Koalixious</span>
                         </a>
                     </Link>
