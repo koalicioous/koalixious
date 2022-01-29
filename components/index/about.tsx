@@ -30,7 +30,7 @@ const LINKS = [
 
 export default function HomeAbout(){
     return (
-        <section className="grid grid-cols-1 md:grid-cols-2 md:gap-8 text-xs md:text-lg xl:w-5/6">
+        <section className="grid grid-cols-1 md:grid-cols-2 md:gap-8 text-xs md:text-xl xl:w-5/6">
             <div className="bg-gray-0 sm:px-6 py-8 rounded-lg leading-loose text-gray-600">
                 <h1 className="text-xl md:text-3xl mb-4">🎵 Intro</h1>
                 <p>
