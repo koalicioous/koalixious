@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import DefaultLayout from '../components/layouts/default'
 import Heading from '../components/heading'
 import Projects from '../components/works/projects'
@@ -6,6 +7,9 @@ import Experiences from '../components/works/experiences'
 export default function Works(){
   return (
     <DefaultLayout>
+      <Head>
+        <title>Koalixious Space — Works &amp; Experiences</title>
+      </Head>
       <Heading title='Works' subtitle='Projects and Experiences' description='documentation of where I have been and what am i been doing.' />
       <Projects />
       <Experiences />

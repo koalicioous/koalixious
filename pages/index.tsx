@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import DefaultLayout from '../components/layouts/default'
 import HomeHeading from '../components/index/heading'
 import HomeAbout from '../components/index/about'
@@ -7,6 +8,10 @@ import Highlights from '../components/index/highlights'
 export default function index(){
   return (
     <DefaultLayout>
+      <Head>
+        <title>Koalixious Space</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <HomeHeading />
       <HomeAbout />
       {/* <Highlights /> */}

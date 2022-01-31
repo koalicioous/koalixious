@@ -10,7 +10,7 @@ const ITEMS = [
     {
         year: '2022',
         title: 'Working for United Nation',
-        content: 'They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she.They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she .They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she '
+        content: 'They told her that this was her once chance to show the world what she was made of. She believed \n them at the time. It was the big stage and she.They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she .They told her that this was her once chance to show the world what she was made of. She believed them at the time. It was the big stage and she '
     },
     {
         year: '2022',
@@ -36,7 +36,7 @@ const ITEMS = [
 
 export default function Items(){
     return (
-        <section className="mt-12 max-w-5xl mx-auto bg-white pt-12">
+        <section className="mt-12 max-w-5xl mx-auto bg-white pt-12 fadein">
             <h1 className='text-3xl font-semibold text-gray-500 mb-6'>🌕 2022</h1>
             <ul>
                 {
@@ -52,7 +52,7 @@ export default function Items(){
                                     </div>
                                 </div>
                                 <div className="mb-12">
-                                    <h1 className='text-2xl font-semibold'>{ item.title }</h1>
+                                    <h1 className='text-2xl font-semibold whitespace-pre'>{ item.title }</h1>
                                     <p className='text-sm md:text-xl mt-2 leading-relaxed md:leading-loose text-gray-500'>{ item.content}</p>
                                 </div>
                             </li>

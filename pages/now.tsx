@@ -1,3 +1,4 @@
+import Head from 'next/head'
 import DefaultLayout from '../components/layouts/default'
 import Heading from '../components/heading'
 import Items from '../components/now/items'
@@ -5,6 +6,9 @@ import Items from '../components/now/items'
 export default function Now(){
   return (
     <DefaultLayout>
+      <Head>
+        <title>Koalixious Space — Now</title>
+      </Head>
       <main className='max-w-7xl mx-auto'>
         <Heading title='Now Page' subtitle='What do I do now' description='a descriptive log of my currently doing, learning, and concerns.' />
         <Items />
