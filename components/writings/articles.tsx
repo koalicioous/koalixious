@@ -43,7 +43,7 @@ export default function Articles(){
                     return (
                         <Link key={index} href={article.link}>
                             <a className='transition-all p-4 my-5 group rounded-md border-b border-gray-50 block hover:bg-gray-50' key={index} target="_blank" rel='noreferrer'>
-                                <p className='text-sm md:text-base text-gray-500 mb-2'>{dateFormat(new Date(article.pubDate), "d mmmm yyyy")}</p>
+                                <p className='text-sm md:text-base text-gray-500 mb-2'>{dateFormat(new Date(article.pubDate.replace(/-/g, "/")), "d mmmm yyyy")}</p>
                                 <h1 className='transition-all text-xl md:text-2xl font-semibold text-gray-700 group-hover:text-blue-600'>{article.title}</h1>
                                 <div className='mt-2 text-sm text-gray-500 md:text-base'>
                                     <FontAwesomeIcon icon={faLink} />
