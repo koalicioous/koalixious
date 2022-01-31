@@ -34,13 +34,13 @@ const MENUS = [
         link: '/writings',
         key: 'm',
     },
-    {
-        icon: '📚',
-        name: 'Bookmarks',
-        description: 'interesting stuff',
-        link: '/bookmarks',
-        key: 'b',
-    },
+    // {
+    //     icon: '📚',
+    //     name: 'Bookmarks',
+    //     description: 'interesting stuff',
+    //     link: '/bookmarks',
+    //     key: 'b',
+    // },
 ]
 export default function Navbar(){
     const [modal, setModal] = useState<boolean>(false)

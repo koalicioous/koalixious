@@ -7,13 +7,12 @@ const LINKS = [
         description: 'Technical writing and reflective notes',
         href: '/writings',
     },
-    {
-        icon: '📚',
-        name: 'Books and their Marks',
-        description: 'Bookshelf, currently reading, and all interesting stuff',
-        href: '/bookmarks',
-    },
-
+    // {
+    //     icon: '📚',
+    //     name: 'Books and their Marks',
+    //     description: 'Bookshelf, currently reading, and all interesting stuff',
+    //     href: '/bookmarks',
+    // },
     {
         icon: '👋🏻',
         name: 'Now',
