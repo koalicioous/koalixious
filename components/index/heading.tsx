@@ -1,4 +1,5 @@
 import { RoughNotation } from "react-rough-notation";
+import Image from 'next/image'
 
 export default function HomeHeading(){
     return (
@@ -7,7 +8,15 @@ export default function HomeHeading(){
             <span className="heading">
                 a Frontend Engineer
             </span>
-            &#38; Designer. 👋
+            &#38; Designer.
+            <span className="relative inline-block h-12 w-12 md:h-16 md:w-16 lg:h-24 lg:w-24 xl:h-28 xl:w-28 md:-mb-3">
+                <Image
+                    alt="waving emoji"
+                    src="/waving.png"
+                    layout="fill"
+                    objectFit="contain"
+                />
+            </span>
         </div>
     )
 }
