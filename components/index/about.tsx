@@ -2,6 +2,18 @@ import Link from "next/link"
 
 const LINKS = [
     {
+        icon: '👨🏻‍💻',
+        name: 'Works',
+        description: 'Projects and experience I worked for.',
+        href: '/works',
+    },
+    {
+        icon: '👋🏻',
+        name: 'Now',
+        description: 'A complete descriptive log of my life',
+        href: '/now',
+    },
+    {
         icon: '✍🏻',
         name: 'Writings',
         description: 'Technical writing and reflective notes',
@@ -13,18 +25,8 @@ const LINKS = [
     //     description: 'Bookshelf, currently reading, and all interesting stuff',
     //     href: '/bookmarks',
     // },
-    {
-        icon: '👋🏻',
-        name: 'Now',
-        description: 'A complete descriptive log of my life',
-        href: '/now',
-    },
-    {
-        icon: '👨🏻‍💻',
-        name: 'Works',
-        description: 'Projects and experience I worked for.',
-        href: '/works',
-    }
+    
+    
 ]
 
 export default function HomeAbout(){
