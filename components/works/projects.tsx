@@ -20,7 +20,7 @@ const PROJECTS = [
 
 export default function Projects(){
     return (
-        <section className="max-w-5xl mx-auto bg-white pt-12">
+        <section className="max-w-5xl mx-auto bg-white pt-12 fadein">
             {
                 PROJECTS.map((project, index) => {
                     return (
